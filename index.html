@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>parque-central-sync</title>
+<style>
+  :root { --bg:#f7f7f5; --fg:#1d1d1b; --mut:#5c5c58; --line:#dcdcd6; --acc:#1f5f8b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --fg:#ecece8; --mut:#a3a39d; --line:#33332f; --acc:#7db3dc; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:1.6rem; margin:0 0 4px; } h2 { font-size:1.1rem; margin:32px 0 8px; }
+  p, li { color:var(--fg); } .sub { color:var(--mut); margin:0 0 24px; }
+  a { color:var(--acc); } footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--mut); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>parque-central-sync</h1>
+  <p class="sub">Herramienta interna de sincronización de datos operativos</p>
+
+  <p>parque-central-sync es una aplicación de uso interno que lee, en modo de <strong>solo lectura</strong>,
+  hojas de cálculo de control operativo almacenadas en Google Drive y copia su contenido a una base de datos
+  privada para generar tableros de indicadores en Power BI.</p>
+
+  <h2>Qué hace</h2>
+  <ul>
+    <li>Consulta periódicamente si las hojas de cálculo autorizadas cambiaron.</li>
+    <li>Cuando hay cambios, lee su contenido y lo guarda en una base de datos privada del operador.</li>
+    <li>No crea, modifica ni elimina archivos en Google Drive.</li>
+  </ul>
+
+  <h2>Quién la usa</h2>
+  <p>La aplicación no está abierta al público. La opera únicamente su desarrollador sobre archivos a los que ya tiene acceso.</p>
+
+  <p><a href="privacidad.html">Política de privacidad</a></p>
+
+  <footer>Contacto: <a href="mailto:ericksaenz88@gmail.com">ericksaenz88@gmail.com</a></footer>
+</main>
+</body>
+</html>
